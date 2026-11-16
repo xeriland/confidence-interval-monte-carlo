@@ -1,12 +1,21 @@
 # When 95% Isn't 95%: A Monte Carlo Investigation of Confidence Interval Reliability
 
+**Research report and reproducible Python simulation**
+
+**Author:** Timothy J. Xeriland  
+**Published:** 2026  
+**Publication:** Figshare  
+**DOI:** https://doi.org/10.6084/m9.figshare.35016253
+
 ## Overview
 
 A nominal 95% confidence interval is designed to contain the true population parameter in approximately 95% of repeated samples. However, actual coverage depends on the statistical procedure, sample size, and characteristics of the population distribution.
 
-This project uses Monte Carlo simulation to investigate the reliability of conventional Student's t confidence intervals and percentile bootstrap confidence intervals for estimating a population mean.
+This repository accompanies the research report *When 95% Isn't 95%: A Monte Carlo Investigation of Confidence Interval Reliability*. It contains the Python simulation used to compare conventional Student's t confidence intervals with percentile bootstrap confidence intervals for estimating a population mean.
 
-The analysis focuses on how sample size and population skewness influence empirical coverage probability and average interval width.
+The investigation examines how sample size and population skewness affect empirical coverage probability and average interval width.
+
+**Read the research report:** https://doi.org/10.6084/m9.figshare.35016253
 
 ## Research Question
 
@@ -25,21 +34,19 @@ The simulation examines:
 
 All three populations share the same mean and standard deviation, allowing the effects of distributional shape to be examined separately.
 
-The simulation evaluates 12 experimental conditions, comparing the empirical coverage and average width of both interval methods.
+The simulation evaluates 12 experimental conditions, comparing empirical coverage and average interval width for both confidence interval methods.
 
 ## Key Findings
 
 1. Conventional Student's t intervals generally maintained coverage close to the nominal 95% level under normality.
-
 2. Percentile bootstrap intervals exhibited substantial undercoverage at small sample sizes, particularly when n = 10.
-
 3. Strong population skewness reduced confidence interval coverage, especially for smaller samples.
-
 4. Increasing sample size generally improved coverage reliability and reduced interval width.
-
 5. Percentile bootstrap intervals frequently produced narrower intervals but did not consistently achieve better coverage than conventional t intervals.
 
-These results demonstrate that bootstrap confidence intervals are not automatically more reliable than traditional parametric intervals.
+These findings demonstrate that bootstrap confidence intervals are not automatically more reliable than traditional parametric intervals.
+
+For the complete results, interpretation, and discussion, see the accompanying research report.
 
 ## Visualizations
 
@@ -82,3 +89,13 @@ The reliability of a nominal 95% confidence interval depends on more than its st
 This simulation illustrates the importance of considering sample size, population distribution, and interval construction method when conducting statistical inference.
 
 The findings are particularly relevant to applied research in psychology, education, and business analytics.
+
+## Citation
+
+Xeriland, T. J. (2026). *When 95% isn't 95%: A Monte Carlo investigation of confidence interval reliability*. Figshare. https://doi.org/10.6084/m9.figshare.35016253
+
+## Research and Project Resources
+
+**Research report:** https://doi.org/10.6084/m9.figshare.35016253
+
+**Source code:** Available in this GitHub repository.
